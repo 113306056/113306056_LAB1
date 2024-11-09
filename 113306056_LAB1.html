@@ -12,21 +12,19 @@
         </tr>
        
         <tr>
-            <!-- Image cell with caption -->
+            
             <td rowspan="3" style="text-align: center;">
-                <img src="image4.jpg" alt="Personal Photo" style="width: 100px; height: 100px;"><br>
+                <img src="image4.jpg" alt="personal photo" style="width: 120px; height: 100px;"><br>
                 <span>Personal Photo</span>
             </td>
-            <td bgcolor="CCCCFF">
+            <td bgcolor="CCCCFF" colspan="2">
                 Name: <input type="text" name="name"><br><br>
                 Gender:
                 <input type="radio" name="gender" value="Male"> Male
                 <input type="radio" name="gender" value="Female"> Female
                 <input type="radio" name="gender" value="Other"> Other
             </td>
-            <td bgcolor="#CCCCFF">
-                Birthday: <input type="date" name="birthday">
-            </td>
+           
         </tr>
         <tr>
             <td bgcolor="#CCCCFF">
@@ -39,20 +37,28 @@
                 </select>
             </td>
             <td bgcolor="#CCCCFF">
+                Birthday: <input type="date" name="birthday">
+            </td>
+            
+        </tr>
+        <tr>
+            <td bgcolor="#CCCCFF" colspan="2">
                 E-mail: <input type="email" name="email">
             </td>
         </tr>
         <tr>
-            <td bgcolor="#CCCCFF">
-                Hobby:<br>
+            <td bgcolor="#CCCCFF">Hobby</td>
+            <td colspan="2">
                 <input type="checkbox" name="hobby" value="Swimming"> Swimming<br>
                 <input type="checkbox" name="hobby" value="Volleyball"> Volleyball<br>
                 <input type="checkbox" name="hobby" value="Movie"> Movie<br>
                 <input type="checkbox" name="hobby" value="Game"> Game<br>
                 <input type="checkbox" name="hobby" value="Sleep"> Sleep
             </td>
-            <td bgcolor="#CCCCFF">
-                Skill:<br>
+        </tr>
+        <tr>
+            <td bgcolor="#CCCCFF">Skill</td>
+            <td colspan="2">
                 <input type="checkbox" name="skill" value="Java"> Java<br>
                 <input type="checkbox" name="skill" value="HTML"> HTML<br>
                 <input type="checkbox" name="skill" value="Python"> Python<br>
@@ -61,8 +67,14 @@
             </td>
         </tr>
         <tr>
-            <td >Say something</td>
+            <td bgcolor="#CCCCFF">Say Something</td>
             <td colspan="2"><textarea name="message" placeholder="Say something here." rows="4" style="width: 100%;"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">
+                <button type="submit">提交</button>
+                <button type="reset">重設</button>
+            </td>
         </tr>
 
     </table>
